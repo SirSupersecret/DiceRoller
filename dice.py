@@ -7,7 +7,9 @@ d = 0
 e = 0
 f = 0
 
-for x in range(1000):
+n = 100000
+
+for x in range(n):
   r = random.randint(1,6)
   if r == 1:
     a = a + 1
@@ -22,11 +24,12 @@ for x in range(1000):
   elif r == 6:
     f = f + 1
 
-print("1: " + str(a))
-print("2: " + str(b))
-print("3: " + str(c))
-print("4: " + str(d))
-print("5: " + str(e))
-print("6: " + str(f))
-
-print("sum: " + str(a+b+c+d+e+f))
+print("relative frequencies:")
+print("1: " + str(a/n))
+print("2: " + str(b/n))
+print("3: " + str(c/n))
+print("4: " + str(d/n))
+print("5: " + str(e/n))
+print("6: " + str(f/n))
+print("")
+print("n = " + str(n))
