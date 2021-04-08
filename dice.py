@@ -1,4 +1,13 @@
+import sys
 import random
+
+n = 100000
+
+if len(sys.argv) > 0:
+  if sys.argv[1].isnumeric():
+    n = int(sys.argv[1])
+  else:
+    print("argument not an integer")
 
 a = 0
 b = 0
@@ -6,8 +15,6 @@ c = 0
 d = 0
 e = 0
 f = 0
-
-n = 100000
 
 for x in range(n):
   r = random.randint(1,6)
