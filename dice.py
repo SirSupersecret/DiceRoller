@@ -7,7 +7,7 @@ d = 0
 e = 0
 f = 0
 
-for x in range(20):
+for x in range(40):
   r = random.randint(1,6)
   if r == 1:
     a = a + 1
